@@ -4,8 +4,18 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true">
 
-    <m:Button
-     text ="say HI"
-     press ="onShowHello"/>
+    <m:VBox>
+        <m:Button
+            text="Say HI"
+            press="onShowHello"/>
+        
+        <m:Input
+            value="{/recipient/name}"
+            valueLiveUpdate="true"
+            width="60%"/>
+
+        
+        <m:Text text="{/greeting}" />
+    </m:VBox>
 
 </mvc:View>
