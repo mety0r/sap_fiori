@@ -4,9 +4,9 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true">
 
-    <m:VBox>
+    
         <m:Button
-            text="Say HI"
+            text="{i18n>showHelloButtonText}"
             press="onShowHello"/>
         
         <m:Input
@@ -16,6 +16,6 @@
 
         
         <m:Text text="{/greeting}" />
-    </m:VBox>
+    
 
 </mvc:View>
